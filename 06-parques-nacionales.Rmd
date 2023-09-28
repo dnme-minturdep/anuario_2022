@@ -284,7 +284,11 @@ tabla_1 %>%
   ) %>% 
   tab_footnote(
     footnote = "Entre el 22 y 30 de mayo los parques nacionales se cerraron a la visita en adhesión a las medidas nacionales (Decreto 334/2021); la reapertura a la visita se realizó progresivamente en los meses siguientes, de acuerdo a la evolución de la situación sanitaria de cada provincia.",
-   locations = cells_body(columns = anio, rows = anio== 2021), placement = "right"  )
+   locations = cells_body(columns = anio, rows = anio== 2021), placement = "right" 
+   ) %>% 
+   tab_footnote(
+    footnote = "Dato provisorio.",
+   locations = cells_body(columns = anio, rows = anio== 2022), placement = "right"  )
   
 ```
 
@@ -467,18 +471,14 @@ tabla_2 %>%
      locations = cells_column_spanners(spanners = c("**2022**")), placement = "right"
   ) %>%
     tab_footnote(
-    footnote = "No se recibió información de visitas de los parques Lago Puelo, Los Glaciares (portada Lago Viedma), Lanín (portada Huechulaufquen en agosto y septiembre), Laguna Blanca (enero), Nahuel Huapi (portada Lago Mascardi en mayo, agosto y septiembre); se recibió información de visitas del parque Monte León de mayo a septiembre en 2022 (históricamente, el parque permanecía cerrado a la visita durante dichos meses).",
+    footnote = "No se recibió información de visitas de los parques Lago Puelo, Los Glaciares (portada Lago Viedma), Lanín (portada Huechulaufquen en agosto y septiembre), Nahuel Huapi (portada Lago Mascardi en mayo, julio y septiembre). Se recibió información de visitas del parque Monte León de mayo a septiembre en 2022 (históricamente, el parque permanecía cerrado a la visita durante dichos meses).",
     locations = cells_row_groups(groups = c("Patagonia")), placement = "right"
   ) %>% 
   tab_footnote(
     footnote = "No se recibió información de visitas en el mes de enero.",
     locations = cells_row_groups(groups = c("Cordoba")), placement = "right"
   ) %>% 
-  tab_footnote(
-    footnote = "Los parques Sierra de las Quijadas y San Guillermo se mantuvieron cerrados a la visita hasta enero y mayo respectivamente por la emergencia sanitaria del covid-19; no se recibió información de visitas del parque El Leoncito (noviembre).",
-    locations = cells_row_groups(groups = c("Cuyo")), placement = "right"
-  ) %>% 
-  tab_footnote(
+    tab_footnote(
     footnote = "No se recibió información del PN El Rey de febrero a junio y del PN Baritú de enero a mayo.",
     locations = cells_row_groups(groups = c("Norte")), placement = "right"
   ) %>% 
