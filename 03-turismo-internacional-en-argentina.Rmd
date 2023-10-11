@@ -341,7 +341,7 @@ Como se observa en el siguiente gráfico, en el año `r as.character(anio_ref)`,
 
 graf_1.2 <- ggplot(g_1.2, aes(x= pais_agrupado, y = round(tur,0))) +   
 geom_col(aes(fill = as_factor(anio)), position = "dodge") +
-geom_label(aes(label = lbl_percent(tur, decimales = 0), group = anio),
+geom_label(aes(label = format(tur, big.mark = ".", decimal.mark = ",", digits = 0), group = anio),
            label.padding =  unit(0.2, "lines"),
            position = position_dodge(width = 1),
            vjust = -0.05,
