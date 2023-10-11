@@ -1308,7 +1308,7 @@ El gran incremento del año `r as.character(anio_ref)` respecto al año anterior
 
 graf_1.2 <- ggplot(g_1.2, aes(x= destino_agrup, y = round(tur))) +   
 geom_col(aes(fill = as_factor(anio)), position = "dodge") +
-geom_label(aes(label = lbl_percent(tur, decimales =0), group = anio), 
+geom_label(aes(label = format(tur, big.mark = ".", decimal.mark = ",", digits = 0), group = anio), 
            label.size = 0.15,
            label.padding =  unit(0.05, "lines"),
            position = position_dodge(width = 0.9),
