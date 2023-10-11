@@ -1,4 +1,5 @@
-[portada_anuario_2022-03](https://github.com/dnme-minturdep/anuario_2022/assets/44036018/9e4f7df0-86a8-4c30-a552-1aeb10454d90)
+![portada_anuario_2022-03](https://github.com/dnme-minturdep/anuario_2022/assets/44036018/98f43d8c-cd2f-4f3c-848c-6b0b7aeb4c0c)
+
 
 # Anuario Estadístico de Turismo 2022
 
