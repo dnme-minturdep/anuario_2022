@@ -323,3 +323,5 @@ estimación-nacional
 estimación-regional
 puestos-de-trabajo-registrados-empleo-por-género-y-empresas-en-ramas-turísticas
 recursos-disponibles-7
+fig:unnamed-chunk-5
+fig:unnamed-chunk-6
